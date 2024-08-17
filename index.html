@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rakhi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <video autoplay muted loop id="background-video">
+            <source src="rakhi_loading.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <img src="front pic.png" alt="Happy Rakshabandhan">
+    </div>
+
+    <div id="upload-screen" style="display: none;">
+        <h2>Upload Images of bros on the left and his Sissy on the right <br>coz u kn sisters are always <span>Right</span></h2>
+        <div id="upload_wala_part">
+            <img src="worried-boy-with-big-eyes.png" alt="bro" height="150px" width="120px">
+            <input type="file" id="sister" accept="image/*">
+            <input type="file" id="brother" accept="image/*">
+            <img src="sis.png" alt="sister" height="200px" width="200px">            
+            <button onclick="generateRakhiImage()">Tie Rakhi</button>            
+        </div>
+        <p>pleas try to Upload both the pics in similar dimensios for <br> better result best if pic are square(1080 x 1080)</p>
+        <video autoplay muted loop id="background-video">
+            <source src="tie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div id="result-screen" style="display: none;">
+        <h2>Wishing you a very Happy Rakhi</h2>
+        <div id="result-container">
+            <div class="result-box" id="brother-box"></div>
+            <div class="result-text">
+                <p>Though we’re miles apart this Raksha Bandhan, our bond remains unbreakable. The distance only makes our connection stronger and more cherished.
+
+                    Let’s celebrate the spirit of Rakhi with the knowledge that our love and support for each other knows no bounds. Here’s to many more shared memories and a bond that endures despite the miles.
+                    
+                    Wishing you joy, health, and all the happiness in the world. <br><span>Best wishes from Anurag Sen</span></p>
+            </div>
+            <div class="result-box" id="sister-box"></div>
+        </div>
+        <br>
+        <a id="downloadLink" download="rakhi_image.png">Download template</a>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/anurag-sen19" target="_blank" class="social-link" title="LinkedIn"><img src="https://img.icons8.com/?size=100&id=8808&format=png&color=000000" alt="" height="30px" width="30px">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/anuragsen.19/" target="_blank" class="social-link" title="Instagram"><img src="https://img.icons8.com/?size=100&id=59813&format=png&color=000000" alt="" height="30px" width="40px">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Rosenmunda" target="_blank" class="social-link" title="GitHub"><img src="https://img.icons8.com/?size=100&id=12599&format=png&color=000000" alt="" height="30px" width="30px">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/anuraag_sen" target="_blank" class="social-link" title="Twitter"><img src="https://img.icons8.com/?size=100&id=phOKFKYpe00C&format=png&color=000000" alt="" height="30px" width="30px">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <video autoplay muted loop id="background-video">
+            <source src="paise.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
